@@ -1,8 +1,0 @@
-#!/bin/bash
-#SBATCH -N 10 -n 10 -J paratreet -p normal -t 01:00:00 -o out -e err
-
-# SMP:
-# ./charmrun +p10 ./paratreet -f ../inputgen/500k.tipsy -p 100 ++ppn 5 +setcpuaffinity 0 +logsize 10000000
-
-# non-SMP:
-# ./charmrun +p10 ./paratreet -f ../inputgen/500k.tipsy -p 100 +logsize 10000000
