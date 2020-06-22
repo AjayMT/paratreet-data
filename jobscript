@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH -N 4 -n 4 -J paratreet -p normal -t 05:00:00 -o out -e err
+
+# test-204-3-smp
+./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p 204 ++ppn 3 +setcpuaffinity 0
+
+# test-12-nosmp
+#./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p12
