@@ -76,14 +76,13 @@ non-SMP on 10 stampede2 KNL nodes with batch resumes:
 | Iteration 2: Flushing particles   | 813.945 ms   | 938.869 ms    | 1157.823 ms   | 1629.236 ms   |
 |-----------------------------------|--------------|---------------|---------------|---------------|
 | Total runtime                     | 341334.21 ms | 430952.89 ms  | 610889.50 ms  | 1087422.3 ms  |
-#|TBLFM: $2=vsum(@I..@II)::$3=vsum(@I..@II)::$4=vsum(@I..@II)::$5=vsum(@I..@II)
 
 
 ### jobscript-1
 
 4 KNL stampede2 nodes, SMP mode, 68 processors, 3ppn (204 PEs):
 
-| Stage                             | TRAM | batch resumes | TRAM         | batch resumes |
+| Stage                             | TRAM + batch resumes | TRAM         | batch resumes |
 |-----------------------------------|----------------------|--------------|---------------|
 | Initialization                    | 10297.789 ms         | 11043.095ms  | 11560.01ms    |
 | Iteration 0: Tree build           | 2153.558 ms          | 1874.245 ms  | 1854.999 ms   |
