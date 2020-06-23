@@ -1,0 +1,1152 @@
+
+Running on 48 processors:  ./paratreet -f ../inputgen/10m.tipsy -p 100 
+charmrun>  /bin/setarch x86_64 -R  mpirun -np 48  ./paratreet -f ../inputgen/10m.tipsy -p 100 
+Charm++>ofi> provider: psm2
+Charm++>ofi> control progress: 2
+Charm++>ofi> data progress: 2
+Charm++>ofi> maximum inject message size: 64
+Charm++>ofi> eager maximum message size: 65536 (maximum header size: 40)
+Charm++>ofi> cq entries count: 8
+Charm++>ofi> use inject: 1
+Charm++>ofi> maximum rma size: 4294967295
+Charm++>ofi> mr mode: 0x1
+Charm++>ofi> use memory pool: 0
+Charm++>ofi> use request cache: 0
+Charm++>ofi> number of pre-allocated recvs: 8
+Charm++>ofi> exchanging addresses over OFI
+Charm++> Running in non-SMP mode: 48 processes (PEs)
+Converse/Charm++ Commit ID: v6.11.0-devel-274-g1de591483
+Isomalloc> Synchronized global address space.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 10 hosts (1 sockets x 68 cores x 4 PUs = 272-way SMP)
+Charm++> cpu topology info is gathered in 0.027 seconds.
+
+[PARATREET]
+Input file: ../inputgen/10m.tipsy
+Decomposition type: OCT
+Tree type: OCT
+Maximum number of particles per treepiece: 100
+Maximum number of particles per leaf: 10
+
+* Initialization
+Loading Tipsy data and building universe: 836.659 ms
+Universal bounding box: <10000000, 1.000, 6.085, {(-17.820 -17.884 -17.771),(17.879 17.832 17.836)}> with volume 45399.465
+Assigning keys and sorting particles: 623.397 ms
+Setting up splitters for decomposition: 3791.528 ms
+Created 334538 TreePieces: 4325.979 ms
+Flushing particles to TreePieces: 5775.320 ms
+
+* Iteration 0
+Tree build: 4770.628 ms
+Received data from 47791 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 17] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 20] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 21] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 27] receiving starter pack, size = 67
+[CacheManager 25] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 30] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 16] receiving starter pack, size = 67
+[CacheManager 31] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+[CacheManager 37] receiving starter pack, size = 67
+[CacheManager 35] receiving starter pack, size = 67
+[CacheManager 18] receiving starter pack, size = 67
+[CacheManager 23] receiving starter pack, size = 67
+[CacheManager 19] receiving starter pack, size = 67
+[CacheManager 40] receiving starter pack, size = 67
+[CacheManager 24] receiving starter pack, size = 67
+[CacheManager 26] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 22] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 45] receiving starter pack, size = 67
+[CacheManager 28] receiving starter pack, size = 67
+[CacheManager 33] receiving starter pack, size = 67
+[CacheManager 29] receiving starter pack, size = 67
+[CacheManager 34] receiving starter pack, size = 67
+[CacheManager 36] receiving starter pack, size = 67
+[CacheManager 41] receiving starter pack, size = 67
+[CacheManager 32] receiving starter pack, size = 67
+[CacheManager 47] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 38] receiving starter pack, size = 67
+[CacheManager 43] receiving starter pack, size = 67
+[CacheManager 39] receiving starter pack, size = 67
+[CacheManager 44] receiving starter pack, size = 67
+[CacheManager 46] receiving starter pack, size = 67
+[CacheManager 42] receiving starter pack, size = 67
+TreeCanopy cache loading: 213.237 ms
+Tree traversal: 88717.042 ms
+Interactions: 6047.660 ms
+Perturbations: 530.387 ms
+Rebuilding universe: 264.264 ms
+Universal bounding box: <10000000, 1.000, 6.085, {(-17.820 -17.876 -17.758),(17.874 17.828 17.810)}> with volume 45328.473
+Assigning keys and sorting particles: 833.573 ms
+Setting up splitters for decomposition: 3503.261 ms
+Created 335259 TreePieces: 2060.153 ms
+Flushing particles to TreePieces: 820.147 ms
+
+* Iteration 1
+Tree build: 4342.938 ms
+Received data from 47894 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 20] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 30] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 21] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 17] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 18] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 19] receiving starter pack, size = 67
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 16] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+[CacheManager 27] receiving starter pack, size = 67
+[CacheManager 25] receiving starter pack, size = 67
+[CacheManager 28] receiving starter pack, size = 67
+[CacheManager 23] receiving starter pack, size = 67
+[CacheManager 29] receiving starter pack, size = 67
+[CacheManager 40] receiving starter pack, size = 67
+[CacheManager 24] receiving starter pack, size = 67
+[CacheManager 26] receiving starter pack, size = 67
+[CacheManager 31] receiving starter pack, size = 67
+[CacheManager 22] receiving starter pack, size = 67
+[CacheManager 37] receiving starter pack, size = 67
+[CacheManager 35] receiving starter pack, size = 67
+[CacheManager 38] receiving starter pack, size = 67
+[CacheManager 33] receiving starter pack, size = 67
+[CacheManager 39] receiving starter pack, size = 67
+[CacheManager 34] receiving starter pack, size = 67
+[CacheManager 36] receiving starter pack, size = 67
+[CacheManager 41] receiving starter pack, size = 67
+[CacheManager 32] receiving starter pack, size = 67
+[CacheManager 47] receiving starter pack, size = 67
+[CacheManager 45] receiving starter pack, size = 67
+[CacheManager 43] receiving starter pack, size = 67
+TreeCanopy cache loading: 217.893 ms
+[CacheManager 44] receiving starter pack, size = 67
+[CacheManager 46] receiving starter pack, size = 67
+[CacheManager 42] receiving starter pack, size = 67
+Tree traversal: 84016.559 ms
+Interactions: 6501.265 ms
+Perturbations: 465.722 ms
+Rebuilding universe: 273.582 ms
+Universal bounding box: <10000000, 1.000, 6.085, {(-17.816 -17.869 -17.758),(17.873 17.816 17.807)}> with volume 45293.555
+Assigning keys and sorting particles: 783.637 ms
+Setting up splitters for decomposition: 3545.958 ms
+Created 335777 TreePieces: 1261.987 ms
+Flushing particles to TreePieces: 796.986 ms
+
+* Iteration 2
+Tree build: 4335.968 ms
+Received data from 47968 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 20] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+[CacheManager 17] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 30] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 16] receiving starter pack, size = 67
+[CacheManager 21] receiving starter pack, size = 67
+[CacheManager 22] receiving starter pack, size = 67
+[CacheManager 27] receiving starter pack, size = 67
+[CacheManager 25] receiving starter pack, size = 67
+[CacheManager 18] receiving starter pack, size = 67
+[CacheManager 23] receiving starter pack, size = 67
+[CacheManager 19] receiving starter pack, size = 67
+[CacheManager 40] receiving starter pack, size = 67
+[CacheManager 24] receiving starter pack, size = 67
+[CacheManager 26] receiving starter pack, size = 67
+[CacheManager 31] receiving starter pack, size = 67
+[CacheManager 32] receiving starter pack, size = 67
+[CacheManager 37] receiving starter pack, size = 67
+[CacheManager 35] receiving starter pack, size = 67
+[CacheManager 28] receiving starter pack, size = 67
+[CacheManager 43] receiving starter pack, size = 67
+[CacheManager 29] receiving starter pack, size = 67
+[CacheManager 34] receiving starter pack, size = 67
+[CacheManager 36] receiving starter pack, size = 67
+[CacheManager 41] receiving starter pack, size = 67
+[CacheManager 42] receiving starter pack, size = 67
+[CacheManager 47] receiving starter pack, size = 67
+[CacheManager 45] receiving starter pack, size = 67
+[CacheManager 38] receiving starter pack, size = 67
+[CacheManager 33] receiving starter pack, size = 67
+[CacheManager 39] receiving starter pack, size = 67
+[CacheManager 44] receiving starter pack, size = 67
+[CacheManager 46] receiving starter pack, size = 67
+TreeCanopy cache loading: 220.643 ms
+Tree traversal: 96685.432 ms
+Interactions: 7496.802 ms
+Perturbations: 553.976 ms
+Rebuilding universe: 309.048 ms
+Universal bounding box: <10000000, 1.000, 6.085, {(-17.815 -17.864 -17.757),(17.872 17.816 17.800)}> with volume 45276.344
+Assigning keys and sorting particles: 989.418 ms
+Setting up splitters for decomposition: 3450.453 ms
+Created 335812 TreePieces: 1158.758 ms
+Flushing particles to TreePieces: 813.945 ms
+[Partition 0][Node 0] End of program
+
+Running on 16 processors:  ./paratreet -f ../inputgen/10m.tipsy -p 100 +ppn 3 +setcpuaffinity 0 
+charmrun>  /bin/setarch x86_64 -R  mpirun -np 16  ./paratreet -f ../inputgen/10m.tipsy -p 100 +ppn 3 +setcpuaffinity 0 
+Charm++>ofi> provider: psm2
+Charm++>ofi> control progress: 2
+Charm++>ofi> data progress: 2
+Charm++>ofi> maximum inject message size: 64
+Charm++>ofi> eager maximum message size: 65536 (maximum header size: 40)
+Charm++>ofi> cq entries count: 8
+Charm++>ofi> use inject: 1
+Charm++>ofi> maximum rma size: 4294967295
+Charm++>ofi> mr mode: 0x1
+Charm++>ofi> use memory pool: 0
+Charm++>ofi> use request cache: 0
+Charm++>ofi> number of pre-allocated recvs: 8
+Charm++>ofi> exchanging addresses over OFI
+Charm++> Running in SMP mode: 16 processes, 3 worker threads (PEs) + 1 comm threads per process, 48 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v6.11.0-devel-274-g1de591483
+Isomalloc> Synchronized global address space.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 10 hosts (1 sockets x 68 cores x 4 PUs = 272-way SMP)
+Charm++> cpu topology info is gathered in 0.046 seconds.
+
+[PARATREET]
+Input file: ../inputgen/10m.tipsy
+Decomposition type: OCT
+Tree type: OCT
+Maximum number of particles per treepiece: 100
+Maximum number of particles per leaf: 10
+
+* Initialization
+Loading Tipsy data and building universe: 331.306 ms
+Universal bounding box: <10000000, 1.000, 6.085, {(-17.820 -17.884 -17.771),(17.879 17.832 17.836)}> with volume 45399.465
+Assigning keys and sorting particles: 786.348 ms
+Setting up splitters for decomposition: 2362.674 ms
+Created 334538 TreePieces: 4419.371 ms
+Flushing particles to TreePieces: 10225.681 ms
+
+* Iteration 0
+Tree build: 5783.440 ms
+Received data from 47791 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+TreeCanopy cache loading: 207.137 ms
+Tree traversal: 96780.389 ms
+Interactions: 6055.636 ms
+Perturbations: 573.990 ms
+Rebuilding universe: 263.849 ms
+Universal bounding box: <10000000, 1.000, 6.085, {(-17.820 -17.876 -17.758),(17.874 17.828 17.810)}> with volume 45328.473
+Assigning keys and sorting particles: 827.422 ms
+Setting up splitters for decomposition: 2510.423 ms
+Created 335259 TreePieces: 2426.733 ms
+Flushing particles to TreePieces: 637.729 ms
+
+* Iteration 1
+Tree build: 5082.949 ms
+Received data from 47894 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+TreeCanopy cache loading: 238.700 ms
+Tree traversal: 98770.732 ms
+Interactions: 6523.150 ms
+Perturbations: 510.400 ms
+Rebuilding universe: 271.405 ms
+Universal bounding box: <10000000, 1.000, 6.085, {(-17.816 -17.869 -17.758),(17.873 17.816 17.807)}> with volume 45293.555
+Assigning keys and sorting particles: 776.541 ms
+Setting up splitters for decomposition: 2597.501 ms
+Created 335777 TreePieces: 1275.151 ms
+Flushing particles to TreePieces: 670.919 ms
+
+* Iteration 2
+Tree build: 5290.199 ms
+Received data from 47968 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+TreeCanopy cache loading: 223.271 ms
+Tree traversal: 100882.504 ms
+Interactions: 7526.034 ms
+Perturbations: 710.948 ms
+Rebuilding universe: 268.971 ms
+Universal bounding box: <10000000, 1.000, 6.085, {(-17.815 -17.864 -17.757),(17.872 17.816 17.800)}> with volume 45276.344
+Assigning keys and sorting particles: 982.235 ms
+Setting up splitters for decomposition: 2547.630 ms
+Created 335812 TreePieces: 1272.177 ms
+Flushing particles to TreePieces: 706.183 ms
+[Partition 0][Node 0] End of program
+
+Running on 36 processors:  ./paratreet -f ../inputgen/10m.tipsy -p 100 
+charmrun>  /bin/setarch x86_64 -R  mpirun -np 36  ./paratreet -f ../inputgen/10m.tipsy -p 100 
+Charm++>ofi> provider: psm2
+Charm++>ofi> control progress: 2
+Charm++>ofi> data progress: 2
+Charm++>ofi> maximum inject message size: 64
+Charm++>ofi> eager maximum message size: 65536 (maximum header size: 40)
+Charm++>ofi> cq entries count: 8
+Charm++>ofi> use inject: 1
+Charm++>ofi> maximum rma size: 4294967295
+Charm++>ofi> mr mode: 0x1
+Charm++>ofi> use memory pool: 0
+Charm++>ofi> use request cache: 0
+Charm++>ofi> number of pre-allocated recvs: 8
+Charm++>ofi> exchanging addresses over OFI
+Charm++> Running in non-SMP mode: 36 processes (PEs)
+Converse/Charm++ Commit ID: v6.11.0-devel-274-g1de591483
+Isomalloc> Synchronized global address space.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 10 hosts (1 sockets x 68 cores x 4 PUs = 272-way SMP)
+Charm++> cpu topology info is gathered in 0.027 seconds.
+
+[PARATREET]
+Input file: ../inputgen/10m.tipsy
+Decomposition type: OCT
+Tree type: OCT
+Maximum number of particles per treepiece: 100
+Maximum number of particles per leaf: 10
+
+* Initialization
+Loading Tipsy data and building universe: 383.491 ms
+Universal bounding box: <10000000, 1.002, 6.085, {(-17.820 -17.884 -17.771),(17.879 17.832 17.836)}> with volume 45399.465
+Assigning keys and sorting particles: 840.319 ms
+Setting up splitters for decomposition: 3543.020 ms
+Created 334538 TreePieces: 4338.837 ms
+Flushing particles to TreePieces: 8291.518 ms
+
+* Iteration 0
+Tree build: 5975.260 ms
+Received data from 47791 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 20] receiving starter pack, size = 67
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 30] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 19] receiving starter pack, size = 67
+[CacheManager 16] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 17] receiving starter pack, size = 67
+[CacheManager 23] receiving starter pack, size = 67
+[CacheManager 18] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 29] receiving starter pack, size = 67
+[CacheManager 26] receiving starter pack, size = 67
+[CacheManager 22] receiving starter pack, size = 67
+[CacheManager 21] receiving starter pack, size = 67
+[CacheManager 27] receiving starter pack, size = 67
+[CacheManager 33] receiving starter pack, size = 67
+[CacheManager 28] receiving starter pack, size = 67
+[CacheManager 24] receiving starter pack, size = 67
+[CacheManager 25] receiving starter pack, size = 67
+[CacheManager 32] receiving starter pack, size = 67
+[CacheManager 31] receiving starter pack, size = 67
+[CacheManager 34] receiving starter pack, size = 67
+[CacheManager 35] receiving starter pack, size = 67
+TreeCanopy cache loading: 215.693 ms
+Tree traversal: 108364.893 ms
+Interactions: 7279.841 ms
+Perturbations: 612.519 ms
+Rebuilding universe: 370.466 ms
+Universal bounding box: <10000000, 1.002, 6.085, {(-17.820 -17.876 -17.758),(17.874 17.828 17.810)}> with volume 45328.473
+Assigning keys and sorting particles: 924.627 ms
+Setting up splitters for decomposition: 3678.196 ms
+Created 335259 TreePieces: 2424.105 ms
+Flushing particles to TreePieces: 1035.441 ms
+
+* Iteration 1
+Tree build: 6528.474 ms
+Received data from 47894 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 20] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 19] receiving starter pack, size = 67
+[CacheManager 16] receiving starter pack, size = 67
+[CacheManager 30] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 17] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 29] receiving starter pack, size = 67
+[CacheManager 26] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+[CacheManager 21] receiving starter pack, size = 67
+[CacheManager 27] receiving starter pack, size = 67
+[CacheManager 23] receiving starter pack, size = 67
+[CacheManager 18] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 25] receiving starter pack, size = 67
+[CacheManager 22] receiving starter pack, size = 67
+[CacheManager 31] receiving starter pack, size = 67
+[CacheManager 33] receiving starter pack, size = 67
+[CacheManager 28] receiving starter pack, size = 67
+[CacheManager 24] receiving starter pack, size = 67
+[CacheManager 35] receiving starter pack, size = 67
+[CacheManager 32] receiving starter pack, size = 67
+[CacheManager 34] receiving starter pack, size = 67
+TreeCanopy cache loading: 216.575 ms
+Tree traversal: 114570.780 ms
+Interactions: 8305.143 ms
+Perturbations: 614.753 ms
+Rebuilding universe: 363.925 ms
+Universal bounding box: <10000000, 1.002, 6.085, {(-17.816 -17.869 -17.758),(17.873 17.816 17.807)}> with volume 45293.555
+Assigning keys and sorting particles: 1129.716 ms
+Setting up splitters for decomposition: 3873.964 ms
+Created 335777 TreePieces: 1262.613 ms
+Flushing particles to TreePieces: 991.956 ms
+
+* Iteration 2
+Tree build: 7109.698 ms
+Received data from 47968 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 20] receiving starter pack, size = 67
+[CacheManager 30] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 17] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 19] receiving starter pack, size = 67
+[CacheManager 16] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 27] receiving starter pack, size = 67
+[CacheManager 23] receiving starter pack, size = 67
+[CacheManager 18] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 25] receiving starter pack, size = 67
+[CacheManager 29] receiving starter pack, size = 67
+[CacheManager 26] receiving starter pack, size = 67
+[CacheManager 22] receiving starter pack, size = 67
+[CacheManager 21] receiving starter pack, size = 67
+[CacheManager 33] receiving starter pack, size = 67
+[CacheManager 28] receiving starter pack, size = 67
+[CacheManager 24] receiving starter pack, size = 67
+[CacheManager 35] receiving starter pack, size = 67
+[CacheManager 32] receiving starter pack, size = 67
+[CacheManager 31] receiving starter pack, size = 67
+[CacheManager 34] receiving starter pack, size = 67
+TreeCanopy cache loading: 219.632 ms
+Tree traversal: 119465.247 ms
+Interactions: 9784.366 ms
+Perturbations: 643.021 ms
+Rebuilding universe: 385.426 ms
+Universal bounding box: <10000000, 1.002, 6.085, {(-17.815 -17.864 -17.757),(17.872 17.816 17.800)}> with volume 45276.344
+Assigning keys and sorting particles: 1173.494 ms
+Setting up splitters for decomposition: 3669.275 ms
+Created 335812 TreePieces: 1427.733 ms
+Flushing particles to TreePieces: 938.869 ms
+[Partition 0][Node 0] End of program
+
+Running on 12 processors:  ./paratreet -f ../inputgen/10m.tipsy -p 100 +ppn 3 +setcpuaffinity 0 
+charmrun>  /bin/setarch x86_64 -R  mpirun -np 12  ./paratreet -f ../inputgen/10m.tipsy -p 100 +ppn 3 +setcpuaffinity 0 
+Charm++>ofi> provider: psm2
+Charm++>ofi> control progress: 2
+Charm++>ofi> data progress: 2
+Charm++>ofi> maximum inject message size: 64
+Charm++>ofi> eager maximum message size: 65536 (maximum header size: 40)
+Charm++>ofi> cq entries count: 8
+Charm++>ofi> use inject: 1
+Charm++>ofi> maximum rma size: 4294967295
+Charm++>ofi> mr mode: 0x1
+Charm++>ofi> use memory pool: 0
+Charm++>ofi> use request cache: 0
+Charm++>ofi> number of pre-allocated recvs: 8
+Charm++>ofi> exchanging addresses over OFI
+Charm++> Running in SMP mode: 12 processes, 3 worker threads (PEs) + 1 comm threads per process, 36 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v6.11.0-devel-274-g1de591483
+Isomalloc> Synchronized global address space.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 10 hosts (1 sockets x 68 cores x 4 PUs = 272-way SMP)
+Charm++> cpu topology info is gathered in 0.047 seconds.
+
+[PARATREET]
+Input file: ../inputgen/10m.tipsy
+Decomposition type: OCT
+Tree type: OCT
+Maximum number of particles per treepiece: 100
+Maximum number of particles per leaf: 10
+
+* Initialization
+Loading Tipsy data and building universe: 370.207 ms
+Universal bounding box: <10000000, 1.002, 6.085, {(-17.820 -17.884 -17.771),(17.879 17.832 17.836)}> with volume 45399.465
+Assigning keys and sorting particles: 1026.462 ms
+Setting up splitters for decomposition: 2333.760 ms
+Created 334538 TreePieces: 4891.652 ms
+Flushing particles to TreePieces: 9976.390 ms
+
+* Iteration 0
+Tree build: 7095.227 ms
+Received data from 47791 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+TreeCanopy cache loading: 213.538 ms
+Tree traversal: 128460.209 ms
+Interactions: 7106.375 ms
+Perturbations: 598.659 ms
+Rebuilding universe: 296.934 ms
+Universal bounding box: <10000000, 1.002, 6.085, {(-17.820 -17.876 -17.758),(17.874 17.828 17.810)}> with volume 45328.473
+Assigning keys and sorting particles: 908.029 ms
+Setting up splitters for decomposition: 2527.363 ms
+Created 335259 TreePieces: 2438.943 ms
+Flushing particles to TreePieces: 668.310 ms
+
+* Iteration 1
+Tree build: 6639.339 ms
+Received data from 47894 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+TreeCanopy cache loading: 215.895 ms
+Tree traversal: 130656.217 ms
+Interactions: 8311.002 ms
+Perturbations: 676.756 ms
+Rebuilding universe: 342.849 ms
+Universal bounding box: <10000000, 1.002, 6.085, {(-17.816 -17.869 -17.758),(17.873 17.816 17.807)}> with volume 45293.555
+Assigning keys and sorting particles: 1083.685 ms
+Setting up splitters for decomposition: 2691.454 ms
+Created 335777 TreePieces: 1470.202 ms
+Flushing particles to TreePieces: 716.740 ms
+
+* Iteration 2
+Tree build: 6582.071 ms
+Received data from 47968 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+TreeCanopy cache loading: 224.563 ms
+Tree traversal: 131414.039 ms
+Interactions: 9803.349 ms
+Perturbations: 631.694 ms
+Rebuilding universe: 345.890 ms
+Universal bounding box: <10000000, 1.002, 6.085, {(-17.815 -17.864 -17.757),(17.872 17.816 17.800)}> with volume 45276.344
+Assigning keys and sorting particles: 1154.337 ms
+Setting up splitters for decomposition: 2615.023 ms
+Created 335812 TreePieces: 1654.807 ms
+Flushing particles to TreePieces: 723.382 ms
+[Partition 0][Node 0] End of program
+
+Running on 24 processors:  ./paratreet -f ../inputgen/10m.tipsy -p 100 
+charmrun>  /bin/setarch x86_64 -R  mpirun -np 24  ./paratreet -f ../inputgen/10m.tipsy -p 100 
+Charm++>ofi> provider: psm2
+Charm++>ofi> control progress: 2
+Charm++>ofi> data progress: 2
+Charm++>ofi> maximum inject message size: 64
+Charm++>ofi> eager maximum message size: 65536 (maximum header size: 40)
+Charm++>ofi> cq entries count: 8
+Charm++>ofi> use inject: 1
+Charm++>ofi> maximum rma size: 4294967295
+Charm++>ofi> mr mode: 0x1
+Charm++>ofi> use memory pool: 0
+Charm++>ofi> use request cache: 0
+Charm++>ofi> number of pre-allocated recvs: 8
+Charm++>ofi> exchanging addresses over OFI
+Charm++> Running in non-SMP mode: 24 processes (PEs)
+Converse/Charm++ Commit ID: v6.11.0-devel-274-g1de591483
+Isomalloc> Synchronized global address space.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 10 hosts (1 sockets x 68 cores x 4 PUs = 272-way SMP)
+Charm++> cpu topology info is gathered in 0.020 seconds.
+
+[PARATREET]
+Input file: ../inputgen/10m.tipsy
+Decomposition type: OCT
+Tree type: OCT
+Maximum number of particles per treepiece: 100
+Maximum number of particles per leaf: 10
+
+* Initialization
+Loading Tipsy data and building universe: 521.452 ms
+Universal bounding box: <10000000, 1.003, 6.085, {(-17.820 -17.884 -17.771),(17.879 17.832 17.836)}> with volume 45399.465
+Assigning keys and sorting particles: 1289.313 ms
+Setting up splitters for decomposition: 3463.139 ms
+Created 334538 TreePieces: 4439.416 ms
+Flushing particles to TreePieces: 9136.757 ms
+
+* Iteration 0
+Tree build: 8579.117 ms
+Received data from 47791 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 20] receiving starter pack, size = 67
+[CacheManager 17] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 21] receiving starter pack, size = 67
+[CacheManager 18] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 16] receiving starter pack, size = 67
+[CacheManager 19] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 22] receiving starter pack, size = 67
+[CacheManager 23] receiving starter pack, size = 67
+TreeCanopy cache loading: 217.186 ms
+Tree traversal: 162029.570 ms
+Interactions: 10641.190 ms
+Perturbations: 924.156 ms
+Rebuilding universe: 699.359 ms
+Universal bounding box: <10000000, 1.003, 6.085, {(-17.820 -17.876 -17.758),(17.874 17.828 17.810)}> with volume 45328.473
+Assigning keys and sorting particles: 1403.807 ms
+Setting up splitters for decomposition: 4145.255 ms
+Created 335259 TreePieces: 2623.145 ms
+Flushing particles to TreePieces: 1323.536 ms
+
+* Iteration 1
+Tree build: 11058.213 ms
+Received data from 47894 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 20] receiving starter pack, size = 67
+[CacheManager 17] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 18] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 19] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 21] receiving starter pack, size = 67
+[CacheManager 16] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+[CacheManager 23] receiving starter pack, size = 67
+[CacheManager 22] receiving starter pack, size = 67
+TreeCanopy cache loading: 214.630 ms
+Tree traversal: 164862.955 ms
+Interactions: 12727.332 ms
+Perturbations: 863.530 ms
+Rebuilding universe: 632.232 ms
+Universal bounding box: <10000000, 1.003, 6.085, {(-17.816 -17.869 -17.758),(17.873 17.816 17.807)}> with volume 45293.555
+Assigning keys and sorting particles: 1548.566 ms
+Setting up splitters for decomposition: 3920.563 ms
+Created 335777 TreePieces: 1765.087 ms
+Flushing particles to TreePieces: 1090.596 ms
+
+* Iteration 2
+Tree build: 11396.585 ms
+Received data from 47968 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 20] receiving starter pack, size = 67
+[CacheManager 17] receiving starter pack, size = 67
+[CacheManager 15] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 19] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 13] receiving starter pack, size = 67
+[CacheManager 21] receiving starter pack, size = 67
+[CacheManager 18] receiving starter pack, size = 67
+[CacheManager 14] receiving starter pack, size = 67
+[CacheManager 16] receiving starter pack, size = 67
+[CacheManager 12] receiving starter pack, size = 67
+[CacheManager 23] receiving starter pack, size = 67
+[CacheManager 22] receiving starter pack, size = 67
+TreeCanopy cache loading: 221.173 ms
+Tree traversal: 165267.000 ms
+Interactions: 13786.165 ms
+Perturbations: 881.164 ms
+Rebuilding universe: 645.521 ms
+Universal bounding box: <10000000, 1.003, 6.085, {(-17.815 -17.864 -17.757),(17.872 17.816 17.800)}> with volume 45276.344
+Assigning keys and sorting particles: 1569.975 ms
+Setting up splitters for decomposition: 4028.519 ms
+Created 335812 TreePieces: 1815.471 ms
+Flushing particles to TreePieces: 1157.823 ms
+[Partition 0][Node 0] End of program
+
+Running on 8 processors:  ./paratreet -f ../inputgen/10m.tipsy -p 100 +ppn 3 +setcpuaffinity 0 
+charmrun>  /bin/setarch x86_64 -R  mpirun -np 8  ./paratreet -f ../inputgen/10m.tipsy -p 100 +ppn 3 +setcpuaffinity 0 
+Charm++>ofi> provider: psm2
+Charm++>ofi> control progress: 2
+Charm++>ofi> data progress: 2
+Charm++>ofi> maximum inject message size: 64
+Charm++>ofi> eager maximum message size: 65536 (maximum header size: 40)
+Charm++>ofi> cq entries count: 8
+Charm++>ofi> use inject: 1
+Charm++>ofi> maximum rma size: 4294967295
+Charm++>ofi> mr mode: 0x1
+Charm++>ofi> use memory pool: 0
+Charm++>ofi> use request cache: 0
+Charm++>ofi> number of pre-allocated recvs: 8
+Charm++>ofi> exchanging addresses over OFI
+Charm++> Running in SMP mode: 8 processes, 3 worker threads (PEs) + 1 comm threads per process, 24 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v6.11.0-devel-274-g1de591483
+Isomalloc> Synchronized global address space.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 8 hosts (1 sockets x 68 cores x 4 PUs = 272-way SMP)
+Charm++> cpu topology info is gathered in 0.037 seconds.
+
+[PARATREET]
+Input file: ../inputgen/10m.tipsy
+Decomposition type: OCT
+Tree type: OCT
+Maximum number of particles per treepiece: 100
+Maximum number of particles per leaf: 10
+
+* Initialization
+Loading Tipsy data and building universe: 548.940 ms
+Universal bounding box: <10000000, 1.003, 6.085, {(-17.820 -17.884 -17.771),(17.879 17.832 17.836)}> with volume 45399.465
+Assigning keys and sorting particles: 1284.974 ms
+Setting up splitters for decomposition: 2289.873 ms
+Created 334538 TreePieces: 5843.578 ms
+Flushing particles to TreePieces: 11284.555 ms
+
+* Iteration 0
+Tree build: 10471.693 ms
+Received data from 47791 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+TreeCanopy cache loading: 210.622 ms
+Tree traversal: 184251.735 ms
+Interactions: 10339.393 ms
+Perturbations: 869.501 ms
+Rebuilding universe: 448.155 ms
+Universal bounding box: <10000000, 1.003, 6.085, {(-17.820 -17.876 -17.758),(17.874 17.828 17.810)}> with volume 45328.473
+Assigning keys and sorting particles: 1370.126 ms
+Setting up splitters for decomposition: 2585.492 ms
+Created 335259 TreePieces: 2677.013 ms
+Flushing particles to TreePieces: 813.539 ms
+
+* Iteration 1
+Tree build: 10137.153 ms
+Received data from 47894 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+TreeCanopy cache loading: 207.997 ms
+Tree traversal: 189015.760 ms
+Interactions: 12349.273 ms
+Perturbations: 855.834 ms
+Rebuilding universe: 540.124 ms
+Universal bounding box: <10000000, 1.003, 6.085, {(-17.816 -17.869 -17.758),(17.873 17.816 17.807)}> with volume 45293.555
+Assigning keys and sorting particles: 1513.204 ms
+Setting up splitters for decomposition: 2886.993 ms
+Created 335777 TreePieces: 1865.254 ms
+Flushing particles to TreePieces: 821.257 ms
+
+* Iteration 2
+Tree build: 10163.556 ms
+Received data from 47968 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+TreeCanopy cache loading: 221.827 ms
+Tree traversal: 200854.332 ms
+Interactions: 13758.656 ms
+Perturbations: 849.286 ms
+Rebuilding universe: 505.978 ms
+Universal bounding box: <10000000, 1.003, 6.085, {(-17.815 -17.864 -17.757),(17.872 17.816 17.800)}> with volume 45276.344
+Assigning keys and sorting particles: 1525.665 ms
+Setting up splitters for decomposition: 2653.024 ms
+Created 335812 TreePieces: 2054.862 ms
+Flushing particles to TreePieces: 854.797 ms
+[Partition 0][Node 0] End of program
+
+Running on 12 processors:  ./paratreet -f ../inputgen/10m.tipsy -p 100 
+charmrun>  /bin/setarch x86_64 -R  mpirun -np 12  ./paratreet -f ../inputgen/10m.tipsy -p 100 
+Charm++>ofi> provider: psm2
+Charm++>ofi> control progress: 2
+Charm++>ofi> data progress: 2
+Charm++>ofi> maximum inject message size: 64
+Charm++>ofi> eager maximum message size: 65536 (maximum header size: 40)
+Charm++>ofi> cq entries count: 8
+Charm++>ofi> use inject: 1
+Charm++>ofi> maximum rma size: 4294967295
+Charm++>ofi> mr mode: 0x1
+Charm++>ofi> use memory pool: 0
+Charm++>ofi> use request cache: 0
+Charm++>ofi> number of pre-allocated recvs: 8
+Charm++>ofi> exchanging addresses over OFI
+Charm++> Running in non-SMP mode: 12 processes (PEs)
+Converse/Charm++ Commit ID: v6.11.0-devel-274-g1de591483
+Isomalloc> Synchronized global address space.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 10 hosts (1 sockets x 68 cores x 4 PUs = 272-way SMP)
+Charm++> cpu topology info is gathered in 0.016 seconds.
+
+[PARATREET]
+Input file: ../inputgen/10m.tipsy
+Decomposition type: OCT
+Tree type: OCT
+Maximum number of particles per treepiece: 100
+Maximum number of particles per leaf: 10
+
+* Initialization
+Loading Tipsy data and building universe: 846.597 ms
+Universal bounding box: <10000000, 0.995, 6.085, {(-17.820 -17.884 -17.771),(17.879 17.832 17.836)}> with volume 45399.465
+Assigning keys and sorting particles: 2643.145 ms
+Setting up splitters for decomposition: 3179.386 ms
+Created 334538 TreePieces: 6842.018 ms
+Flushing particles to TreePieces: 9410.203 ms
+
+* Iteration 0
+Tree build: 15981.447 ms
+Received data from 47791 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+TreeCanopy cache loading: 215.216 ms
+Tree traversal: 289287.570 ms
+Interactions: 20224.378 ms
+Perturbations: 1694.044 ms
+Rebuilding universe: 898.355 ms
+Universal bounding box: <10000000, 0.995, 6.085, {(-17.820 -17.876 -17.758),(17.874 17.828 17.810)}> with volume 45328.473
+Assigning keys and sorting particles: 2608.101 ms
+Setting up splitters for decomposition: 4180.166 ms
+Created 335259 TreePieces: 3637.131 ms
+Flushing particles to TreePieces: 1549.522 ms
+
+* Iteration 1
+Tree build: 25375.521 ms
+Received data from 47894 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+TreeCanopy cache loading: 215.001 ms
+Tree traversal: 295954.835 ms
+Interactions: 24052.050 ms
+Perturbations: 1546.247 ms
+Rebuilding universe: 1055.919 ms
+Universal bounding box: <10000000, 0.995, 6.085, {(-17.816 -17.869 -17.758),(17.873 17.816 17.807)}> with volume 45293.555
+Assigning keys and sorting particles: 2693.940 ms
+Setting up splitters for decomposition: 3815.954 ms
+Created 335777 TreePieces: 2930.149 ms
+Flushing particles to TreePieces: 1887.569 ms
+
+* Iteration 2
+Tree build: 26039.367 ms
+Received data from 47968 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 5] receiving starter pack, size = 67
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 6] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+[CacheManager 8] receiving starter pack, size = 67
+[CacheManager 4] receiving starter pack, size = 67
+[CacheManager 9] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 7] receiving starter pack, size = 67
+[CacheManager 10] receiving starter pack, size = 67
+[CacheManager 11] receiving starter pack, size = 67
+TreeCanopy cache loading: 207.259 ms
+Tree traversal: 298924.181 ms
+Interactions: 25618.673 ms
+Perturbations: 1572.616 ms
+Rebuilding universe: 1125.224 ms
+Universal bounding box: <10000000, 0.995, 6.085, {(-17.815 -17.864 -17.757),(17.872 17.816 17.800)}> with volume 45276.344
+Assigning keys and sorting particles: 2652.992 ms
+Setting up splitters for decomposition: 3634.326 ms
+Created 335812 TreePieces: 3293.966 ms
+Flushing particles to TreePieces: 1629.236 ms
+[Partition 0][Node 0] End of program
+
+Running on 4 processors:  ./paratreet -f ../inputgen/10m.tipsy -p 100 +ppn 3 +setcpuaffinity 0 
+charmrun>  /bin/setarch x86_64 -R  mpirun -np 4  ./paratreet -f ../inputgen/10m.tipsy -p 100 +ppn 3 +setcpuaffinity 0 
+Charm++>ofi> provider: psm2
+Charm++>ofi> control progress: 2
+Charm++>ofi> data progress: 2
+Charm++>ofi> maximum inject message size: 64
+Charm++>ofi> eager maximum message size: 65536 (maximum header size: 40)
+Charm++>ofi> cq entries count: 8
+Charm++>ofi> use inject: 1
+Charm++>ofi> maximum rma size: 4294967295
+Charm++>ofi> mr mode: 0x1
+Charm++>ofi> use memory pool: 0
+Charm++>ofi> use request cache: 0
+Charm++>ofi> number of pre-allocated recvs: 8
+Charm++>ofi> exchanging addresses over OFI
+Charm++> Running in SMP mode: 4 processes, 3 worker threads (PEs) + 1 comm threads per process, 12 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v6.11.0-devel-274-g1de591483
+Isomalloc> Synchronized global address space.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 4 hosts (1 sockets x 68 cores x 4 PUs = 272-way SMP)
+Charm++> cpu topology info is gathered in 0.035 seconds.
+
+[PARATREET]
+Input file: ../inputgen/10m.tipsy
+Decomposition type: OCT
+Tree type: OCT
+Maximum number of particles per treepiece: 100
+Maximum number of particles per leaf: 10
+
+* Initialization
+Loading Tipsy data and building universe: 889.572 ms
+Universal bounding box: <10000000, 0.995, 6.085, {(-17.820 -17.884 -17.771),(17.879 17.832 17.836)}> with volume 45399.465
+Assigning keys and sorting particles: 2644.183 ms
+Setting up splitters for decomposition: 2320.366 ms
+Created 334538 TreePieces: 9167.346 ms
+Flushing particles to TreePieces: 11776.235 ms
+
+* Iteration 0
+Tree build: 20927.711 ms
+Received data from 47791 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+TreeCanopy cache loading: 213.061 ms
+Tree traversal: 344143.495 ms
+Interactions: 19808.942 ms
+Perturbations: 1664.991 ms
+Rebuilding universe: 1101.849 ms
+Universal bounding box: <10000000, 0.995, 6.085, {(-17.820 -17.876 -17.758),(17.874 17.828 17.810)}> with volume 45328.473
+Assigning keys and sorting particles: 2725.884 ms
+Setting up splitters for decomposition: 2651.774 ms
+Created 335259 TreePieces: 3182.338 ms
+Flushing particles to TreePieces: 1283.220 ms
+
+* Iteration 1
+Tree build: 20485.006 ms
+Received data from 47894 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+TreeCanopy cache loading: 232.083 ms
+Tree traversal: 352277.477 ms
+Interactions: 23255.547 ms
+Perturbations: 1648.697 ms
+Rebuilding universe: 1070.588 ms
+Universal bounding box: <10000000, 0.995, 6.085, {(-17.816 -17.869 -17.758),(17.873 17.816 17.807)}> with volume 45293.555
+Assigning keys and sorting particles: 2678.155 ms
+Setting up splitters for decomposition: 2679.617 ms
+Created 335777 TreePieces: 2071.775 ms
+Flushing particles to TreePieces: 1417.179 ms
+
+* Iteration 2
+Tree build: 20185.194 ms
+Received data from 47968 TreeCanopies
+Broadcasting top 3 levels to caches
+[CacheManager 0] receiving starter pack, size = 67
+[CacheManager 1] receiving starter pack, size = 67
+[CacheManager 3] receiving starter pack, size = 67
+[CacheManager 2] receiving starter pack, size = 67
+TreeCanopy cache loading: 219.073 ms
+Tree traversal: 366317.288 ms
+Interactions: 24971.683 ms
+Perturbations: 1752.744 ms
+Rebuilding universe: 1246.430 ms
+Universal bounding box: <10000000, 0.995, 6.085, {(-17.815 -17.864 -17.757),(17.872 17.816 17.800)}> with volume 45276.344
+Assigning keys and sorting particles: 2770.568 ms
+Setting up splitters for decomposition: 2566.340 ms
+Created 335812 TreePieces: 2188.125 ms
+Flushing particles to TreePieces: 1678.418 ms
+[Partition 0][Node 0] End of program

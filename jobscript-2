@@ -1,0 +1,45 @@
+#!/bin/bash
+#SBATCH -N 10 -n 10 -J paratreet -p normal -t 10:00:00 -o out -e err
+
+# test-204-3-smp
+#./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p 204 ++ppn 3 +setcpuaffinity 0
+
+# test-48-nosmp
+make clean > /dev/null
+make CHARM_HOME=$HOME/charm-ofi-nosmp -j4 > /dev/null
+./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p48
+
+# test-48-smp
+make clean > /dev/null
+make CHARM_HOME=$HOME/charm-ofi -j4 > /dev/null
+./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p 48 ++ppn 3 +setcpuaffinity 0
+
+# test-36-nosmp
+make clean > /dev/null
+make CHARM_HOME=$HOME/charm-ofi-nosmp -j4 > /dev/null
+./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p36
+
+# test-36-smp
+make clean > /dev/null
+make CHARM_HOME=$HOME/charm-ofi -j4 > /dev/null
+./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p 36 ++ppn 3 +setcpuaffinity 0
+
+# test-24-nosmp
+make clean > /dev/null
+make CHARM_HOME=$HOME/charm-ofi-nosmp -j4 > /dev/null
+./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p24
+
+# test-24-smp
+make clean > /dev/null
+make CHARM_HOME=$HOME/charm-ofi -j4 > /dev/null
+./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p 24 ++ppn 3 +setcpuaffinity 0
+
+# test-12-nosmp
+make clean > /dev/null
+make CHARM_HOME=$HOME/charm-ofi-nosmp -j4 > /dev/null
+./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p12
+
+# test-12-smp
+make clean > /dev/null
+make CHARM_HOME=$HOME/charm-ofi -j4 > /dev/null
+./charmrun ./paratreet -f ../inputgen/10m.tipsy -p 100 +p 12 ++ppn 3 +setcpuaffinity 0
